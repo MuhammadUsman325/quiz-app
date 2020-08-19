@@ -1,0 +1,13 @@
+
+
+#quizContainer{
+    margin: 10px;
+    font-size: 1.5em;
+
+}
+#question{
+    font-size: 1.5em;
+}
+#resultContainer{
+    background-color: blue;
+}

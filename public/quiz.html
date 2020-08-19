@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        div {
+            box-shadow: 0 0 10px white;
+
+            background-color: wheat;
+            font-size: 4.5em;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            margin-left: 50px;
+        
+
+
+        }
+
+        .bg {
+            background-color: thistle;
+        }
+        span{
+            
+        }
+    </style>
+</head>
+
+<body bg=green>
+
+    <div id="quizContainer" class="container-fluid"   class="btn-group btn-group-justified">
+        
+        <center>
+            <h2 id="timer" class="btn btn-primary btn-block"></h2>
+        </center>
+        <h5 id="question"></h5>
+        <label>
+            <input type="radio" value="1" name="option">
+            <span id="option1" ></span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="2" name="option">
+            <span id="option2" ></span>
+            </span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="3" name="option">
+            <span id="option3"  ></span>
+            </span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="4" name="option">
+            <span id="option4" ></span>
+            </span>
+        </label>
+        <br>
+        <button onclick="next();">Next Question</button>
+
+    </div>
+    <div id="resultContainer" style="display:none">
+        <h1 id="score" class="bg"></h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
